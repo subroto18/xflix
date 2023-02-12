@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+.content-rating-btn,
+.genre {
+  align-items: center;
+  display: flex;
+  margin: 1rem 0;
+}
+.category-form {
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  color: #181818;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 200px;
+}
+.category-form select {
+  background: transparent;
+  border: none;
+  height: 40px;
+  outline: none;
+}
+.search-input {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+  width: 300px;
+}
+.search-button,
+.search-input {
+  background: transparent;
+  border: 1px solid #444d56;
+  height: 40px;
+  outline: 0;
+}
+.search-button {
+  color: #444d56;
+  width: 40px;
+}
+.search-bar-mobile {
+  display: none;
+}
+.genre-pannel,
+.search-bar-desktop {
+  align-items: center;
+  display: flex;
+}
+.genre-pannel {
+  background: #202020;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.genre-pannel button {
+  border-radius: 25px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+.iframe {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.ifarme-container {
+  height: 80vh;
+  width: 80vw;
+}
+#upload-btn {
+  text-transform: capitalize;
+}
+.upload-modal {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 24;
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12),
+    0 11px 15px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+@media (max-width: 767px) {
+  .ifarme-container {
+    height: 50vh;
+    width: 90vw;
+  }
+  .search-bar-desktop {
+    display: none;
+  }
+  .search-bar-mobile {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .upload-modal {
+    width: 300px;
+  }
+}
